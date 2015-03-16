@@ -79,7 +79,8 @@ html[xmlns] .slides {display: block;}
 
 /* Control Nav */
 .flex-control-nav {margin:0 -15px;}
-.flex-control-nav li {margin: 0 0 30px; float:left; width:33.33%; zoom: 1; padding:0 15px; cursor:pointer;}
+.flex-control-nav li {margin: 0 0 30px; float:left; width:33.33%; zoom: 1; padding:0 15px; cursor:pointer; position:relative;}
+.flex-control-nav li .full-screen-btn {right:25px;}
 .flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -moz-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); -o-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); box-shadow: inset 0 0 3px rgba(0,0,0,0.3); }
 .flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
 .flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }

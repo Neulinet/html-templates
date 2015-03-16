@@ -395,6 +395,36 @@ header:after,
 	background-position:center -420px;
 	}
 
+.icon-weather-large {
+	display:inline-block;
+	height:80px;
+	width:80px;
+	background-image:url(../img/weather-sprite-large.png);
+	background-repeat:no-repeat;
+	}
+
+.icon-weather-large.i-sunny-large {
+	background-position:0 0;
+	}
+
+.icon-weather-large.i-cloudy-large {
+	background-position:0 -85px;
+	}
+
+.icon-weather-large.i-rainy-large {
+	background-position:0 -170px;
+	}
+
+.icon-weather-large.i-storm-large {
+	background-position:0 -255px;
+	}
+
+.icon-full-screen {
+	background-position: 0 -1131px;
+	width:16px;
+	height:16px;
+	}
+
 .power-status {
 	width:45px;
 	height:63px;
@@ -939,10 +969,42 @@ header {
 	border-color:#8cc6ec;
 	}
 
+.right-sidebar .muted {
+	color:#a6d3f0;
+	}
+
+.weather-widget {
+	overflow:hidden;
+	margin:0;
+	}
+	
+.weather-widget h3 {
+	margin:0;
+	}
+
 .weather-widget li {
 	float:left;
 	width:20%;
-	text-align:center;
+	}
+
+.weather-widget li:first-child {
+	width:100%;
+	float:none;
+	position:relative;
+	padding-right:90px;
+	margin-bottom:20px;
+	max-width:400px;
+	}
+
+.weather-widget li:first-child .icon-weather-large {
+	position:absolute;
+	top:0;
+	right:0;
+	}
+
+.weather-widget li p {
+	line-height:1;
+	margin-bottom:10px;
 	}
 
 .page-content {
@@ -1297,6 +1359,31 @@ label {
 	display:block;
 	}
 
+.full-screen-btn {
+	position:absolute;
+	top:10px;
+	right:10px;
+	z-index:999;
+	opacity:.3;
+	}
+
+.full-screen-btn:hover {
+	opacity:1;
+	}
+
+.full-screen {
+	margin:30px;
+	max-width:none;
+	overflow:visible;
+	}
+
+.full-screen .mfp-close{
+	height:30px;
+	width:30px;
+	line-height:30px;
+	top:-30px;
+	right:-30px;
+	}
 
 @media(min-width:768px){
 	.nav-btn {
