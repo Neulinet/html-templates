@@ -1,0 +1,462 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo automation</title>
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/tabs.css" rel="stylesheet">
+    <link href="css/accordion.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<span class="nav-btn">&equiv;</span>  
+        <div class="logo-wrap">
+            <span><strong>Zoo</strong></span> 
+            <span>automation</span>
+        </div>
+        <div class="container">
+        	<form method="" action="" class="search-bar hidden-mobile">
+            	<input type="text" class="field">
+            </form>
+        </div>
+        <ul class="user-area">
+        	<li>
+            	<span class="notifications wrap">
+                	<i class="icon i-notification"></i>
+                    <span class="unread">8</span>
+                </span>
+            </li>
+            <li class="hidden-mobile">
+            	<a href="profile.html" class="user wrap">
+                	<div class="photo-wrap">
+                    	<img src="img/user.jpg" alt="Mr. Johnson">
+                    </div>
+                    <span class="welcome">Welcome back</span>
+                    <strong class="user-name">Mr. Johnson</strong>
+                </a>
+            </li>
+            <li>
+            	<a href="login.html" class="wrap logout">
+                	<i class="icon i-logout"></i>
+                </a>
+            </li>
+        </ul>
+		
+	</header>
+    
+    <div class="notifications-popup">
+		<table class="main-table">
+			<thead>
+				<tr>
+                	<th>Notification</th>
+                    <th>Issue</th>
+                    <th>Resolved</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Consumption</td>
+                    <td>Out</td>
+                    <td><label class="checkbox-wrap"><input type="checkbox" checked><span class="checkbox"></span></label></td>
+				</tr>
+				<tr>
+					<td>Power</td>
+					<td>Over average</td>
+					<td><label class="checkbox-wrap"><input type="checkbox"><span class="checkbox"></span></label></td>
+				</tr>
+				<tr>
+					<td>Light on</td>
+					<td>15 hours</td>
+					<td><label class="checkbox-wrap"><input type="checkbox"><span class="checkbox"></span></label></td>
+				</tr>
+                <tr>
+					<td>Consumption</td>
+                    <td>Out</td>
+                    <td><label class="checkbox-wrap"><input type="checkbox" checked><span class="checkbox"></span></label></td>
+				</tr>
+				<tr>
+					<td>Power</td>
+					<td>Over average</td>
+					<td><label class="checkbox-wrap"><input type="checkbox"><span class="checkbox"></span></label></td>
+				</tr>
+				<tr>
+					<td>Light on</td>
+					<td>15 hours</td>
+					<td><label class="checkbox-wrap"><input type="checkbox"><span class="checkbox"></span></label></td>
+				</tr>
+                <tr>
+					<td>Consumption</td>
+                    <td>Out</td>
+                    <td><label class="checkbox-wrap"><input type="checkbox" checked><span class="checkbox"></span></label></td>
+				</tr>
+				<tr>
+					<td>Power</td>
+					<td>Over average</td>
+					<td><label class="checkbox-wrap"><input type="checkbox"><span class="checkbox"></span></label></td>
+				</tr>
+				<tr>
+					<td>Light on</td>
+					<td>15 hours</td>
+					<td><label class="checkbox-wrap"><input type="checkbox"><span class="checkbox"></span></label></td>
+				</tr>
+			</tbody>
+		</table>
+	</div><!--notifications-popup-->
+    
+    <aside class="left-sidebar">
+    	
+        <!--mobile search bar-->
+        <form method="" action="" class="search-bar mobile-search-bar visible-mobile">
+			<input type="text" class="field">
+		</form>
+        
+         <!--mobile user info-->
+    	<a href="profile.html" class="user visible-mobile">
+            <div class="photo-wrap">
+            	<img src="img/user.jpg" alt="Mr. Johnson">
+			</div>
+			<span class="welcome">Welcome back</span>
+			<strong class="user-name">Mr. Johnson</strong>
+		</a>
+        
+        <ul class="nav">
+        	<li>
+                <a href="room.html">
+                	<i class="nav-icon i-rooms"></i>
+                    Rooms
+                </a>
+            </li>
+            <li>
+                <a href="energy-center.html">
+                	<i class="nav-icon i-energy-center"></i>
+                    Energy Center
+                </a>
+            </li>
+            <li>
+                <a href="access.html">
+                	<i class="nav-icon i-access"></i>
+                	Access
+                </a>
+            </li>
+            <li>
+                <a href="cctv.html">
+                	<i class="nav-icon i-cctv"></i>
+                	CCTV
+                </a>
+            </li>
+            <li>
+                <a href="cost-settings.html">
+                	<i class="nav-icon i-cost-settings"></i>
+                	Cost Settings 
+                </a>
+            </li>
+            <li>
+                <a href="alerts.html">
+                	<i class="nav-icon i-alert"></i>
+                	Alerts
+                </a>
+            </li>
+            <li>
+                <a href="alarm.html">
+                	<i class="nav-icon i-alarm"></i>
+                	Alarm
+                </a>
+            </li>
+            <li>
+                <a href="intercom.html">
+                	<i class="nav-icon i-intercom"></i>
+                	intercom
+                </a>
+            </li>
+            <li class="active">
+                <a href="discover.html">
+                	<i class="nav-icon i-settings"></i>
+                	Settings
+                </a>
+            </li>
+        </ul>   
+    </aside><!--left-sidebar-->
+    
+    <section class="page-content">
+    	<div class="container">
+        
+        	<h2>Settings</h2>
+        
+				<nav>
+					<ul class="cd-tabs-navigation">
+						<li><a href="discover.html">Discover</a></li>
+                        <li><a class="selected" href="manual-setup.html">Manual setup</a></li>
+                        <li><a href="groups.html">Groups</a></li>
+                    </ul> 
+				</nav>
+                    
+                    	<div class="group">
+                        	<h2>Set devices location</h2>
+                            <a href="#" class="btn">Scan the network</a>
+                        </div>
+                    
+                    	<table class="main-table">
+                        	<thead>
+                            	<tr>
+                                	<th>IP</th>
+                                    <th>Description</th>
+                                    <th>Communication</th>
+                                    <th>Select</th>
+                                </tr>
+                           	</thead>
+                           	<tbody>
+								<tr>
+                                    <td><a class="popup-with-move-anim" href="#dialog">192.01.01.01</a></td>
+                                    <td>Not avalaible</td>
+                                    <td>Live</td>
+                                    <td>
+                                    	<label class="radio-wrap">
+                                            <input type="radio" name="select" checked>
+                                            <span class="radio"></span>
+                                        </label>
+                                   	</td>
+                               </tr>
+                               <tr>
+                                    <td><a class="popup-with-move-anim" href="#dialog">192.01.01.01</a></td>
+                                    <td>Wireles Belkin</td>
+                                    <td>Live</td>
+                                    <td>
+                                    	<label class="radio-wrap">
+                                            <input type="radio" name="select">
+                                            <span class="radio"></span>
+                                        </label>
+                                   	</td>
+                               </tr>
+                               <tr>
+                                    <td><a class="popup-with-move-anim" href="#dialog">192.01.01.01</a></td>
+                                    <td>Mox</td>
+                                    <td>Not live</td>
+                                    <td>
+                                    	<label class="radio-wrap">
+                                            <input type="radio" name="select">
+                                            <span class="radio"></span>
+                                        </label>
+                                   	</td>
+                               </tr>
+							</tbody>
+						</table>
+                        
+                        <a href="#" class="btn btn-block">Save</a>
+                        
+                        <div id="dialog" class="zoom-anim-dialog mfp-hide dialog dialog-small">
+                        
+                            <div class="dialog-header">
+                                <h3>Popup</h3>
+                             </div><!--popup-header-->
+                             
+                             <div class="dialog-content">
+                             	<p>
+                                	<strong>IP</strong>
+                                	<br>
+                                    192.01.01.01
+                                </p>
+                                
+                                <div class="group">
+                                    <p class="small-margin"><strong>Binding</strong></p>
+                                    <select class="field">
+                                        <option>MOX on/off</option>
+                                        <option>MOX on/off</option>
+                                        <option>MOX on/off</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="group">
+                                    <p class="small-margin"><strong>Nickname</strong></p>
+                                    <input type="text" value="Some nickname" class="field">
+                                </div>
+                                
+                                <div class="group">
+                                    <p class="small-margin"><strong>Group</strong></p>
+                                    <select class="field">
+                                        <option>Living room</option>
+                                        <option>TV room</option>
+                                        <option>Main room</option>
+                                    </select>
+                                </div>
+                             </div><!--popup-content-->
+                             
+                             <div class="dialog-footer">
+                                <div class="row fixed-row">
+                                    <div class="col6">
+                                        <a class="popup-modal-dismiss cancel" href="#"><strong>CANCEL</strong></a>
+                                    </div>
+                                    <div class="col6 text-right">
+                                        <a class="popup-modal-dismiss btn" href="#">Save</a>
+                                    </div>
+                                </div><!--row-->
+                             </div><!--dialog-footer-->
+                             
+                        </div><!--dialog-->
+            
+        </div><!--container-->
+    </section><!--page-content-->
+    
+    <aside class="right-sidebar">
+    	<div class="group horizontal-divider">
+            <h3>Today’s usage of all devices is:</h3>
+            <h1><strong>156,231 kW</strong></h1>
+        </div>
+        <h2><strong>Usage</strong></h2>
+        <table class="main-table">
+			<thead>
+				<tr>
+					<th></th>
+                    <th>Today</th>
+                    <th>Weekly</th>
+                    <th>Monthly</th>
+                    <th>Cost</th>
+				</tr>
+			</thead>
+            <tbody>
+                <tr>
+                    <th>ROOM 1</th>
+                    <td><span class="green">23 kW</span></td>
+                    <td><span class="orange">150 kW</span></td>
+                    <td><span class="red">580 kW</span></td>
+                    <td>$2,000</td>
+                </tr>
+                <tr>
+                    <th>ROOM 2</th>
+                    <td><span class="green">23 kW</span></td>
+                    <td><span class="orange">150 kW</span></td>
+                    <td><span class="red">580 kW</span></td>
+                    <td>$2,000</td>
+                </tr>
+                <tr>
+                    <th>ROOM 3</th>
+                    <td><span class="green">23 kW</span></td>
+                    <td><span class="orange">150 kW</span></td>
+                    <td><span class="red">580 kW</span></td>
+                    <td>$2,000</td>
+                </tr>
+                <tr>
+                    <th>LIVING<br>ROOM</th>
+                    <td><span class="green">23 kW</span></td>
+                    <td><span class="orange">150 kW</span></td>
+                    <td><span class="red">580 kW</span></td>
+                    <td>$2,000</td>
+                </tr>
+                <tr>
+                    <th>RINING<br>ROOM</th>
+                    <td><span class="green">23 kW</span></td>
+                    <td><span class="orange">150 kW</span></td>
+                    <td><span class="red">580 kW</span></td>
+                    <td>$2,000</td>
+                </tr>
+                <tr>
+                    <th>KITCHEN</th>
+                    <td><span class="green">23 kW</span></td>
+                    <td><span class="orange">150 kW</span></td>
+                    <td><span class="red">580 kW</span></td>
+                    <td>$2,000</td>
+                </tr>
+            </tbody>
+		</table>
+        <br>
+        
+        <ul class="weather-widget">
+            <li>
+            	<div class="group">
+                    <h4><strong>TODAY, 12 March</strong></h4>
+                	<p class="muted">Australia, Sydney</p>
+               		<h1><strong>25°</strong> <small>20°</small></h1>
+                </div>
+                <i class="icon-weather-large i-sunny-large"></i>
+                <!--<i class="icon-weather-large i-rainy-large"></i>
+                <i class="icon-weather-large i-cloudy-large"></i>
+                <i class="icon-weather-large i-storm-large"></i>-->
+            </li>
+        	<li>
+            	<p>
+                    <strong>TUE</strong>
+                    <br>
+                    <small class="muted">13 MAR</small>
+                </p>
+            	<i class="icon i-sunny"></i>
+                <h3>24°</h3>
+            </li>
+            <li>
+            	<p>
+                    <strong>WED</strong>
+                    <br>
+                    <small class="muted">14 MAR</small>
+                </p>
+            	<i class="icon i-cloudy"></i>
+                <h3>25°</h3>
+            </li>
+            <li>
+            	<p>
+                    <strong>THU</strong>
+                    <br>
+                    <small class="muted">15 MAR</small>
+                </p>
+            	<i class="icon i-rainy"></i>
+                <h3>19°</h3>
+            </li>
+            <li>
+            	<p>
+                    <strong>FRI</strong>
+                    <br>
+                    <small class="muted">16 MAR</small>
+                </p>
+            	<i class="icon i-storm"></i>
+                <h3>23°</h3>
+            </li>
+            <li>
+            	<p>
+                    <strong>SAT</strong>
+                    <br>
+                    <small class="muted">17 MAR</small>
+                </p>
+            	<i class="icon i-cloudy"></i>
+                <h3>22°</h3>
+            </li>
+        </ul>
+    </aside><!--right-sidebar-->
+    
+	<script src="js/jquery-1.11.2.min.js"></script> 
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/accordion.min.js"></script>   
+    <script>
+	
+		$(".nav-btn").click(function(){
+			$(".left-sidebar").toggleClass("left-sidebar-active");
+			$("body").toggleClass("blackout");
+		}); 
+		
+		$(".notifications").click(function(){
+			$(".notifications-popup").slideToggle(300)
+			$(this).toggleClass("notifications-active")
+		});
+		
+		//popup
+		$('.popup-with-move-anim').magnificPopup({
+			type: 'inline',		
+			fixedContentPos:true,
+			fixedBgPos: false,			
+			closeBtnInside: true,
+			preloader: false,				
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-slide-bottom'
+		});
+		$(document).on('click', '.popup-modal-dismiss', function (e) {
+			e.preventDefault();
+			$.magnificPopup.close();
+		});
+		
+		//accordion
+		$('.ui.accordion')
+  		.accordion()
+		;
+		
+    </script>
+</body>
+</html>

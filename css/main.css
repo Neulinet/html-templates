@@ -144,7 +144,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .row {
-	margin:0 -15px;
+	margin:0 -10px;
 	}
 
 .row:before,
@@ -172,7 +172,7 @@ header:after,
 .cols-margin .col10,
 .cols-margin .col11,
 .cols-margin .col12 {
-	margin-bottom:30px;
+	margin-bottom:20px;
 	}
 
 .col1,
@@ -188,7 +188,7 @@ header:after,
 .col11,
 .col12 {
 	float:left;
-	padding:0 15px;
+	padding:0 10px;
 	}
 
 .col1 {width:8.333%;}
@@ -203,6 +203,50 @@ header:after,
 .col10 {width:83.333%;}
 .col11 {width:91.663%;}
 .col12 {width:100%;}
+
+
+.nav-icon {
+	background-image:url(../img/navigation-sprite.png);
+	background-repeat:no-repeat;
+	display:inline-block;
+	position:absolute;
+	top:50%;
+	margin-top:-13px;
+	left:13px;
+	height:25px;
+	width:25px;
+	}
+
+.nav-icon.i-rooms { background-position:0 0; }
+.active .nav-icon.i-rooms { background-position:0 -25px; }
+
+.nav-icon.i-energy-center { background-position:0 -50px; }
+.active .nav-icon.i-energy-center { background-position:0 -75px; }
+
+.nav-icon.i-access { background-position:0 -100px; }
+.active .nav-icon.i-access { background-position:0 -125px; }
+
+.nav-icon.i-cctv { background-position:0 -150px; }
+.active .nav-icon.i-cctv { background-position:0 -175px; }
+
+.nav-icon.i-cost-settings { background-position:0 -200px; }
+.active .nav-icon.i-cost-settings { background-position:0 -225px; }
+
+.nav-icon.i-cost-settings { background-position:0 -200px; }
+.active .nav-icon.i-cost-settings { background-position:0 -225px; }
+
+.nav-icon.i-alert { background-position:0 -250px; }
+.active .nav-icon.i-alert { background-position:0 -275px; }
+
+.nav-icon.i-alarm { background-position:0 -300px; }
+.active .nav-icon.i-alarm { background-position:0 -325px; }
+
+.nav-icon.i-intercom { background-position:0 -350px; }
+.active .nav-icon.i-intercom { background-position:0 -375px; }
+
+.nav-icon.i-settings { background-position:0 -400px; }
+.active .nav-icon.i-settings { background-position:0 -425px; }
+
 
 .icon {
 	background-image:url(../img/sprite.png);
@@ -229,65 +273,6 @@ header:after,
 	height:25px;
 	}
 
-.i-room {
-	background-position:center -318px;
-	width:100%;
-	height:38px;
-	}
-
-.active .i-room {
-	background-position:center -361px;
-	}
-
-.i-energy-center {
-	background-position:center -404px;
-	width:100%;
-	height:38px;
-	}
-
-.active .i-energy-center {
-	background-position:center -447px;
-	}
-
-.i-access {
-	background-position:center -490px;
-	width:100%;
-	height:38px;
-	}
-
-.active .i-access {
-	background-position:center -533px;
-	}
-
-.i-cctv {
-	background-position:center -576px;
-	width:100%;
-	height:38px;
-	}
-
-.active .i-cctv {
-	background-position:center -619px;
-	}
-
-.i-cost-settings {
-	background-position:center -662px;
-	width:100%;
-	height:38px;
-	}
-
-.active .i-cost-settings {
-	background-position:center -705px;
-	}
-
-.i-alert {
-	background-position:center -1041px;
-	width:100%;
-	height:38px;
-	}
-
-.active .i-alert {
-	background-position:center -1086px;
-	}
 
 .i-cloudy {
 	background-position:0 -113px;
@@ -395,6 +380,10 @@ header:after,
 	background-position:center -420px;
 	}
 
+.i-scene {
+	background-position:center -462px;
+	}
+
 .icon-weather-large {
 	display:inline-block;
 	height:80px;
@@ -460,10 +449,15 @@ header:after,
 	max-width:100%;
 	border-radius:3px;
 	border:none;
-	padding:12px 15px;
+	padding:0 15px;
 	margin:0;
     font-family: 'vw_headline_otbook', sans-serif;;
 	font-size:1em;
+	height:40px;
+	}
+
+textarea {
+	height:auto !important;
 	}
 
 .field:disabled {
@@ -517,6 +511,15 @@ header:after,
 	text-decoration:none;
 	}
 
+.btn-white {
+	background:#fff;
+	color:#2b2c2e;
+	}
+
+.btn-white:hover {
+	background:#f5f5f5;
+	}
+
 .btn-block {
 	width:100%;
 	padding-left:0;
@@ -531,7 +534,7 @@ header {
 	left:0;
 	width:100%;
 	z-index:30;
-	padding:0 400px 0 150px;
+	padding:0 400px 0 200px;
 	}
 
 .nav-btn {
@@ -548,7 +551,7 @@ header {
 	}
 
 .logo-wrap {
-	width:150px;
+	width:200px;
 	padding:13px 0;
 	background:#4694c8;
 	border-left:5px solid #3f85b4;
@@ -705,9 +708,7 @@ header {
 .notifications-popup *:last-child {
 	margin:0;
 	}
-
-
-
+	
 .notifications-popup .main-table {
 	color:#fff;
 	}
@@ -718,7 +719,7 @@ header {
 	border-spacing: 0;
 	border-collapse: collapse;
 	border-top:1px solid #ddd;
-	margin:0 0 20px;
+	margin:0 0 30px;
 	}
 
 .main-table th,
@@ -727,7 +728,7 @@ header {
 	vertical-align:top;
 	text-align:left;
 	font-weight:inherit;
-	padding:10px 0;
+	padding:10px 4px;
 	line-height:1.3;
 	}
 	
@@ -742,6 +743,16 @@ header {
 
 .main-table tr {
 	border-bottom:1px solid #ddd;
+	}
+
+.main-table tr td:first-child,
+.main-table tr th:first-child {
+	padding-left:0;
+	}
+
+.main-table tr td:last-child,
+.main-table tr th:last-child {
+	padding-right:0;
 	}
 
 .notifications-popup .main-table tr,
@@ -884,13 +895,9 @@ header {
 	left:0;
 	z-index:2;
 	background:#fff;
-	width:150px;
+	width:200px;
 	height:100%;
 	border-left:5px solid #4fa7e2;
-	}
-
-.nav {
-	text-align:center;
 	}
 
 .nav li:last-child {
@@ -906,10 +913,10 @@ header {
 	color:#a0a2ab;
     font-family: 'vw_headline_otblack', sans-serif;;
 	text-decoration:none;
-	font-size:1.2em;
 	line-height:1;
-	padding:20px 10px;
+	padding:20px 10px 20px 50px; 
 	display:block;
+	position:relative;
 	}
 
 .nav li a:hover {
@@ -1008,7 +1015,7 @@ header {
 	}
 
 .page-content {
-	padding:140px 400px 50px 150px;
+	padding:140px 400px 50px 200px;
 	}
 
 .control-box {
@@ -1168,19 +1175,7 @@ header {
 	overflow:hidden;
 	position:relative;
 	}
-
-/*.days-wrap:after {
-	content:'';
-	position:absolute;
-	z-index:-1;
-	width:100%;
-	height:2px;
-	background:#fff;
-	opacity:.2;
-	top:35px;
-	left:0;
-	}*/
-
+	
 .days-wrap .day {
 	float:left;
 	width:14.28%;
@@ -1295,9 +1290,7 @@ header {
 #side-nav .selected a {
 	opacity:1;
 	}
-
-
-
+	
 #side-nav li {
 	padding-right:15px;
 	position:relative;
@@ -1385,6 +1378,36 @@ label {
 	right:-30px;
 	}
 
+.breadcrumbs li{
+	display:inline-block;
+	margin-right:3px;
+	}
+
+.breadcrumbs li:after {
+	content:'>';
+	font-size:.8em;
+	margin-left:8px;
+	color:#bbb;
+	display:inline-block;
+	}
+
+.breadcrumbs li:last-child {
+	margin-right:0;
+	}
+
+.breadcrumbs li:last-child:after {
+	display:none;
+	}
+
+.breadcrumbs li:last-child a {
+	color:#2b2c2e;
+	cursor:default;
+	}
+
+.breadcrumbs li:last-child a:hover {
+	text-decoration:none;
+	}
+
 @media(min-width:768px){
 	.nav-btn {
 		display:none;
@@ -1409,12 +1432,12 @@ label {
 	.right-sidebar {
 		position:static;
 		width:100%;
-		padding:30px 30px 50px 180px;
+		padding:30px 30px 50px 230px;
 		background:#4da3dc;
 		}
 	
 	.page-content {
-		padding:120px 0 50px 150px;
+		padding:120px 0 50px 200px;
 		}
 	
 	.timeframe {
@@ -1607,42 +1630,8 @@ label {
 		padding:0 10px;
 		}
 	
-	.cols-margin .col1,
-	.cols-margin .col2,
-	.cols-margin .col3,
-	.cols-margin .col4,
-	.cols-margin .col5,
-	.cols-margin .col6,
-	.cols-margin .col7,
-	.cols-margin .col8,
-	.cols-margin .col9,
-	.cols-margin .col10,
-	.cols-margin .col11,
-	.cols-margin .col12 {
-		margin-bottom:20px;
-		}
-	
 	.nav {
 		margin:0 0 70px;
-		}
-	
-	.nav li a {
-		padding-left:50px;
-		text-align:left;
-		position:relative;
-		font-size:1em;
-		}
-	
-	.nav li a i {
-		-moz-transform: scale(.6);
-		-webkit-transform: scale(.6);
-		-o-transform: scale(.6);
-		-ms-transform: scale(.6);
-		transform: scale(.6);
-		position:absolute;
-		top:8px;
-		left:0;
-		width:50px;
 		}
 	
 	.timeframe {
@@ -1675,6 +1664,10 @@ label {
 	
 	#side-nav {
 		display:none;
+		}
+	
+	.main-table {
+		font-size:.85em;
 		}
 	
 	}

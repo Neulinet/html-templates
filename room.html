@@ -29,7 +29,7 @@
                 </span>
             </li>
             <li class="hidden-mobile">
-            	<a href="#" class="user wrap">
+            	<a href="profile.html" class="user wrap">
                 	<div class="photo-wrap">
                     	<img src="img/user.jpg" alt="Mr. Johnson">
                     </div>
@@ -113,7 +113,7 @@
 		</form>
         
          <!--mobile user info-->
-    	<a href="#" class="user visible-mobile">
+    	<a href="profile.html" class="user visible-mobile">
             <div class="photo-wrap">
             	<img src="img/user.jpg" alt="Mr. Johnson">
 			</div>
@@ -124,38 +124,56 @@
         <ul class="nav">
         	<li class="active">
                 <a href="room.html">
-                	<i class="icon i-room"></i>
+                	<i class="nav-icon i-rooms"></i>
                     Rooms
                 </a>
             </li>
             <li>
                 <a href="energy-center.html">
-                	<i class="icon i-energy-center"></i>
+                	<i class="nav-icon i-energy-center"></i>
                     Energy Center
                 </a>
             </li>
             <li>
                 <a href="access.html">
-                	<i class="icon i-access"></i>
+                	<i class="nav-icon i-access"></i>
                 	Access
                 </a>
             </li>
             <li>
                 <a href="cctv.html">
-                	<i class="icon i-cctv"></i>
+                	<i class="nav-icon i-cctv"></i>
                 	CCTV
                 </a>
             </li>
             <li>
                 <a href="cost-settings.html">
-                	<i class="icon i-cost-settings"></i>
+                	<i class="nav-icon i-cost-settings"></i>
                 	Cost Settings 
                 </a>
             </li>
             <li>
                 <a href="alerts.html">
-                	<i class="icon i-alert"></i>
+                	<i class="nav-icon i-alert"></i>
                 	Alerts
+                </a>
+            </li>
+            <li>
+                <a href="alarm.html">
+                	<i class="nav-icon i-alarm"></i>
+                	Alarm
+                </a>
+            </li>
+            <li>
+                <a href="intercom.html">
+                	<i class="nav-icon i-intercom"></i>
+                	intercom
+                </a>
+            </li>
+            <li>
+                <a href="discover.html">
+                	<i class="nav-icon i-settings"></i>
+                	Settings
                 </a>
             </li>
         </ul>   
@@ -186,7 +204,8 @@
                         <nav>
                             <ul class="cd-tabs-navigation">
                                 <li><a data-content="1" class="selected" href="#0">Active <small>(4)</small></a></li>
-                                <li><a data-content="2" href="#0">All power/appliances <small>(11)</small></a></li>
+                                <li><a data-content="2" href="#0">Scenes <small>(2)</small></a></li>
+                                <li><a data-content="3" href="#0">All <small>(11)</small></a></li>
                             </ul> 
                         </nav>
                         
@@ -259,9 +278,73 @@
                                         </div>
                                     </li>
                                 </ul><!--line-list-->
+                                
+                                <a href="#scene" class="btn btn-block popup-with-move-anim">Save Scene</a>
+                                
+                                <div id="scene" class="zoom-anim-dialog dialog dialog-small mfp-hide">
+                                	<div class="dialog-header">
+                                    	<h3>New scene</h3>
+                                    </div><!--dialog-header-->
+                                    
+                                    <div class="dialog-content">
+                                    	<label>
+                                        	<p class="small-margin"><strong>Scene name</strong></p>
+                                        	<input type="text" class="field">
+                                        </label>
+                                	</div><!--dialog-content-->
+                                    
+                                   	<div class="dialog-footer">
+                                        <div class="row fixed-row">
+                                            <div class="col6">
+                                                <a class="popup-modal-dismiss cancel" href="#"><strong>CANCEL</strong></a>
+                                            </div>
+                                            <div class="col6 text-right">
+                                                <a class="popup-modal-dismiss btn" href="#">Save</a>
+                                            </div>
+                                        </div><!--row-->
+                                 	</div><!--dialog-footer-->
+                            	</div><!--scene-->
+                                
                             </li><!--tab1-->
                             
                             <li data-content="2">
+                            
+                            	<ul class="line-list">
+                                	<li>
+                                    	<div class="radio-block-wrap">
+                                        	<i class="icon-appliance i-scene"></i>
+                                        	<h4 class="up-case no-margin">Out of the house<br><small>on</small></h4>
+                                            <label class="master-switch switch-small">
+                                                <input type="checkbox" checked>
+                                                <span class="switch"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                    	<div class="radio-block-wrap">
+                                        	<i class="icon-appliance i-scene"></i>
+                                        	<h4 class="up-case no-margin">Sexy time<br><small class="muted">off</small></h4>
+                                            <label class="master-switch switch-small">
+                                                <input type="checkbox">
+                                                <span class="switch"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                    	<div class="radio-block-wrap">
+                                        	<i class="icon-appliance i-scene"></i>
+                                        	<h4 class="up-case no-margin">Sleep<br><small class="muted">off</small></h4>
+                                            <label class="master-switch switch-small">
+                                                <input type="checkbox">
+                                                <span class="switch"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul><!--line-list-->
+                                
+                            </li><!--tab2-->
+                            
+                            <li data-content="3">
                                 
                                 <div class="large-margin">
                                 	<h3>Master switch</h3>
@@ -277,7 +360,7 @@
                                 	<li>
                                     	<div class="radio-block-wrap">
                                         	<i class="icon-appliance i-light-on-small"></i>
-                                        	<h4 class="up-case no-margin">lights<br><small>off</small></h4>
+                                        	<h4 class="up-case no-margin">lights<br><small class="muted">off</small></h4>
                                             <label class="master-switch switch-small">
                                                 <input type="checkbox">
                                                 <span class="switch"></span>
@@ -386,7 +469,7 @@
                                     </li>
                                 </ul><!--line-list-->
                                 
-                            </li><!--tab2-->
+                            </li><!--tab3-->
                         </ul><!-- cd-tabs-content -->
                     </div><!-- cd-tabs -->
                 </div><!--col8-->
@@ -565,6 +648,10 @@
 			midClick: true,
 			removalDelay: 300,
 			mainClass: 'my-mfp-slide-bottom'
+		});
+		$(document).on('click', '.popup-modal-dismiss', function (e) {
+			e.preventDefault();
+			$.magnificPopup.close();
 		});
     </script>
 </body>
