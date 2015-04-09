@@ -578,14 +578,12 @@ header {
 	position:relative;
 	}
 
-.search-bar:before {
-	content:'';
-	background:url(../img/sprite.png) no-repeat 0 -293px;
-	width:20px;
-	height:20px;
+.search-bar .fa-search {
 	position:absolute;
-	top:10px;
+	top:12px;
 	left:17px;
+	font-size:1.2em;
+	color:#fff;
 	}
 
 .search-bar input {
@@ -603,14 +601,6 @@ header {
 	padding-left:35px;
 	background:#eee;
 	color:#2b2c2e;
-	}
-
-.mobile-search-bar:before {
-	background:url(../img/sprite.png) no-repeat -27px -293px;
-	width:15px;
-	height:15px;
-	top:14px;
-	left:12px;
 	}
 
 .user-area {
@@ -900,12 +890,23 @@ header {
 	border-left:5px solid #4fa7e2;
 	}
 
+.nav li {
+	border-top:1px solid #e5e5e5;
+	}
+
 .nav li:last-child {
 	border-bottom:1px solid #e5e5e5;
 	}
 
-.nav li {
-	border-top:1px solid #e5e5e5;
+.nav li .fa {
+	height:50px;
+	line-height:50px;
+	position:absolute;
+	top:0;
+	left:0;
+	width:50px;
+	text-align:center;
+	font-size:1.5em;
 	}
 
 .nav li a {
@@ -914,7 +915,7 @@ header {
     font-family: 'vw_headline_otblack', sans-serif;;
 	text-decoration:none;
 	line-height:1;
-	padding:20px 10px 20px 50px; 
+	padding:18px 10px 18px 50px; 
 	display:block;
 	position:relative;
 	}
@@ -1357,7 +1358,8 @@ label {
 	top:10px;
 	right:10px;
 	z-index:9;
-	opacity:.3;
+	color:#000;
+	opacity:.4;
 	}
 
 .full-screen-btn:hover {
@@ -1406,6 +1408,15 @@ label {
 
 .breadcrumbs li:last-child a:hover {
 	text-decoration:none;
+	}
+
+.white {
+	color:#fff;
+	}
+
+.i-padding {
+	padding:5px;
+	margin-left:10px;
 	}
 
 @media(min-width:768px){
@@ -1536,7 +1547,7 @@ label {
 		}
 	
 	.user-area .notifications, .user-area .logout {
-		padding:13px 0 0;
+		padding:15px 0 0;
 		width:50px;
 		}
 
@@ -1668,6 +1679,15 @@ label {
 	
 	.main-table {
 		font-size:.85em;
+		}
+	
+	.search-bar .fa-search {
+		color:#999;
+		left:10px;
+		}
+	
+	.user-area .fa {
+		font-size:1.5em;
 		}
 	
 	}
