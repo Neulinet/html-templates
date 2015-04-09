@@ -1105,6 +1105,12 @@ header {
 	top:0;
 	left:0;
 	}
+
+.radio-block-wrap .fa {
+	position:absolute;
+	top:0;
+	left:0;
+	}
 	
 .radio-block-wrap .switch-small {
 	width:60px;
