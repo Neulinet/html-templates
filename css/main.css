@@ -1106,7 +1106,8 @@ header {
 	left:0;
 	}
 
-.radio-block-wrap .fa {
+.radio-block-wrap .fa,
+.radio-block-wrap .electronic {
 	position:absolute;
 	top:0;
 	left:0;
